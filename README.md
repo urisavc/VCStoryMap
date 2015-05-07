@@ -9,8 +9,9 @@ URISA Vanguard Cabinet Story Map (customized from the [Esri shortlist story map 
 
 See below for original Esri documentation:
 
+This repository contains the application files for the "Shortlist" story map app.  The app presents a curated set of points of interest.
+
 ## Features
-* This repository contains the application files for the "Shortlist" story map app.  The app presents a curated set of points of interest.
 * You can organize your POIs by theme; for example, Food, Hotels, and Attractions. 
 * As users pan and zoom, the app presents POIs only for the current map extent.
 
