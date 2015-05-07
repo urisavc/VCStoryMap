@@ -153,7 +153,7 @@ function init() {
 	var mapDeferred = esri.arcgis.utils.createMap(WEBMAP_ID, "map", {
 		mapOptions: {
 			slider: false,
-			wrapAround180:false
+			wrapAround180:true
 		},
 		ignorePopups: true
 	});
@@ -942,9 +942,9 @@ function buildPopup(feature, geometry, baseLayerClick)
 		}
 		
 		if (website) {
-			$(contentDiv).append($('<div class="address"><a href="'+website+'" target="_blank">Website</a></div>').css("padding-top", 10));
+			$(contentDiv).append($('<div class="address"><a href="'+website+'" target="_blank">Connect via Social Media</a></div>').css("padding-top", 10));
 			if(baseLayerClick && mobile)
-				$('#mobileSupportedLayersView').append($('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Website</a></div>').css("padding-top", 10));
+				$('#mobileSupportedLayersView').append($('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Connect via Social Media</a></div>').css("padding-top", 10));
 		}
 		
 	}
@@ -990,9 +990,9 @@ function buildPopup(feature, geometry, baseLayerClick)
 		}
 	  
 		if (website) {
-			$(contentDiv).append('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Website</a></div>');
+			$(contentDiv).append('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Connect via Social Media</a></div>');
 			if(baseLayerClick && mobile){
-				$('#mobileSupportedLayersView').append('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Website</a></div>');
+				$('#mobileSupportedLayersView').append('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Connect via Social Media</a></div>');
 			}
 		}
 		$(contentDiv).append('<div style="margin-bottom: 20px;"></div>');
@@ -1089,7 +1089,7 @@ function buildMobileSlideView(featureNumber){
 			}
 			
 			if (website) {
-				$(mobileContentDiv).append($('<div class="mobileFeatureDesc"><a href="'+website+'" target="_blank">Website</a></div>').css("padding-top", 10));
+				$(mobileContentDiv).append($('<div class="mobileFeatureDesc"><a href="'+website+'" target="_blank">Connect via Social Media</a></div>').css("padding-top", 10));
 			}
 			
 		} else {
@@ -1116,7 +1116,7 @@ function buildMobileSlideView(featureNumber){
 			}
 		  
 			if (website) {
-				$(mobileContentDiv).append('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Website</a></div>');
+				$(mobileContentDiv).append('<div class="mobileFeatureAddress"><a href="'+website+'" target="_blank">Connect via Social Media</a></div>');
 			}
 			$(mobileContentDiv).append('<div style="margin-bottom: 20px;"></div>');
 		}
@@ -1166,7 +1166,7 @@ function showDetails(graphic) {
 	var website = graphic.attributes.getValueCI(FIELDNAME_WEBSITE);
 	if (website) {
 		website = prependURLHTTP($.trim(website));
-		$(leftDiv).append('<div class="address"><a href="'+website+'" target="_blank">Website</a></div>');
+		$(leftDiv).append('<div class="address"><a href="'+website+'" target="_blank">Connect via Social Media</a></div>');
 	}
 	
 	var descFields = [FIELDNAME_DESC1, FIELDNAME_DESC2, FIELDNAME_DESC3, FIELDNAME_DESC4, FIELDNAME_DESC5];
