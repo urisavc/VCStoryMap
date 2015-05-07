@@ -1,12 +1,16 @@
-# shortlist-storytelling-template-js
+# VCStoryMap
 
-This repository contains the application files for the "Shortlist" story map app.  The app presents a curated set of points of interest.  
+URISA Vanguard Cabinet Story Map (customized from the [Esri shortlist story map app](https://github.com/Esri/shortlist-storytelling-template-js)).  
 
-[View live app here](http://storymaps.esri.com/stories/shortlist-sandiego/)
+[View live app here](http://geofinne.github.io/VCStoryMap/)
 
-![App](images/shortlist-storytelling-template-js.png) 
+![App](images/app.png) 
+
+
+See below for original Esri documentation:
 
 ## Features
+* This repository contains the application files for the "Shortlist" story map app.  The app presents a curated set of points of interest.
 * You can organize your POIs by theme; for example, Food, Hotels, and Attractions. 
 * As users pan and zoom, the app presents POIs only for the current map extent.
 
