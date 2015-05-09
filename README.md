@@ -2,7 +2,7 @@
 
 URISA Vanguard Cabinet Story Map (customized from the [Esri shortlist story map app](https://github.com/Esri/shortlist-storytelling-template-js)).  
 
-[View live app here](http://geofinne.github.io/VCStoryMap/)
+[View live app here](http://urisavc.github.io/VCStoryMap)
 
 ![App](images/app.png) 
 
